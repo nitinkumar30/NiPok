@@ -10,7 +10,7 @@ import {
 const BLIND_MULTIPLIERS = [100, 50, 25, 10]; // for 9, 6, 4, 2 player tables
 
 export function createTable(name: string, maxPlayers: number): PokerTable {
-  const blinds = maxPlayers === 2 ? 100 : maxPlayers === 4 ? 200 : maxPlayers === 6 ? 500 : 1000;
+  const blinds = maxPlayers === 2 ? 50 : maxPlayers === 4 ? 100 : maxPlayers === 6 ? 200 : 500;
   return {
     id: uuidv4(),
     name,
