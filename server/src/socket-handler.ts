@@ -6,7 +6,7 @@ import { v4 as uuidv4 } from 'uuid';
 const tables: Map<string, PokerTable> = new Map();
 const playerSockets: Map<string, string> = new Map();
 
-const TABLE_NAMES = ['Chai Pe Charcha Table', 'Sasta Casino', 'Bada Paisa Table', 'Gully Boys']; const STARTING_CHIPS = 10000;
+const TABLE_NAMES = ['Chai Pe Charcha Table', 'Sasta Casino', 'Bada Paisa Table', 'Gully Boys']; const STARTING_CHIPS = 349;
 
 function getOrCreateTables() {
   if (tables.size === 0) {
